@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link href="css/main.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+	<title>Registration</title>
+</head>
+<body>
+	<main class="wrapper">
+		<div class="wrapper__main">
+			<h1>Log in</h1>
+			<a href="pages/singup.html" class="wrapper__href">Not a member?</a>
+
+			<form class="wrapper__form" id="formWithValidator" name="form">
+				<div class="wrapper__input">
+		  			<input id="emailAddress" class="field" name="email" type="email" placeholder="Email...">
+		  		</div>
+		  		<div class="wrapper__input">
+		  			<input id="loginPass"  class="field" name="password" type="password" placeholder="Password..." pattern="[a-zA-Zа-яА-ЯёЁ0-9]{6,90}" title="Password must be at least 6 characters">
+		  		</div>
+		  		
+		  		<input id="check" class="wrapper__button" type="submit" name="check" value="Log in">
+			</form>
+			<a href="pages/reset.html" class="wrapper__href">Fogot password?</a>
+		</div>
+	</main>
+
+
+<script src="js/index.js"></script>
+</body>
+</html>
